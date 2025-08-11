@@ -19,7 +19,7 @@ const upload = multer({ storage: multer.memoryStorage() });
 
 // --- API KEY CONFIGURATION ---
 // PASTE YOUR API KEY DIRECTLY INTO THE QUOTES BELOW
-const apiKey = "AIzaSyD43gXoc4HjaVFqFL3ZL2nk2vFmsKCX0aA";
+const apiKey = "";
 // -----------------------------
 
 const genAI = new GoogleGenerativeAI(apiKey);
