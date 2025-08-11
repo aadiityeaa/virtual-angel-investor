@@ -1,6 +1,3 @@
-// --- FINAL WORKING CODE ---
-// Note: This version bypasses the .env file due to a persistent local environment issue.
-
 const express = require('express');
 const multer = require('multer');
 const cors = require('cors');
@@ -18,9 +15,7 @@ app.use(express.json());
 const upload = multer({ storage: multer.memoryStorage() });
 
 // --- API KEY CONFIGURATION ---
-// PASTE YOUR API KEY DIRECTLY INTO THE QUOTES BELOW
 const apiKey = "";
-// -----------------------------
 
 const genAI = new GoogleGenerativeAI(apiKey);
 const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
